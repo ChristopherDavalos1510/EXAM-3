@@ -1,0 +1,437 @@
+--EXAMEN TERCER PARCIAL ADMINISTRACIÓN DE BASE DE DATOS
+--ELABORÓ:GONZALEZ DAVALOS CHRISTOPHER SERGIO
+select*from tabla1;
+drop table tabla1;
+
+create table tabla1( 
+id number(5),
+Nombre nvarchar2(80),
+Precio number(5),
+Num_tipo number(5),
+Num_mar number(5)
+);
+
+
+
+select * from Tabla2;
+drop table Tabla2;
+
+create table Tabla2(
+id number(5),
+Tipo nvarchar2(30)
+);
+
+
+
+select * from Tabla3;
+drop table Tabla3;
+
+create table Tabla3( 
+id number(5),
+Marca nvarchar2(30)
+);
+
+
+
+
+-- A CONTINUACIÓN, REALIZO LAS INSERCIONES NECESARIAS PARA LA TABLA1
+--LAS DIVIDO POR INICIAL POR MOTIVO DE COMODIDAD
+
+--INICIAL A
+insert into tabla1 values(1,'Agua Pepino y Limon 500ml', 15,12,6);
+insert into tabla1 values(2,'Agua Pepino y Limon 1L', 25,12,6);
+insert into tabla1 values(3,'Agua de Fresa 500ml', 15,12,6);
+insert into tabla1 values(4,'Agua de Fresa 1L', 25,12,6);
+insert into tabla1 values(5,'Agua de Chocolate 500ml', 15,12,6);
+insert into tabla1 values(6,'Agua de Chocolate 1L', 25,12,6);
+insert into tabla1 values(7,'Agua de Horchata 500ml', 15,12,6);
+insert into tabla1 values(8,'Agua de Horchata 1L', 25,12,6);
+
+--INICIAL C
+insert into tabla1 values(9,'Congelada de Rompope', 15,15,7);
+insert into tabla1 values(10,'Congelada de Limon', 15,15,7);
+insert into tabla1 values(11,'Congelada de Galleta Oreo', 15,15,7);
+insert into tabla1 values(12,'Congelada de Limon', 15,15,7);
+
+--INICIAL E
+insert into tabla1 values(13,'Enchiladas de pollo', 35,8,3);
+insert into tabla1 values(14,'Enchiladas con suadero', 35,8,3);
+
+--INICIAL G
+insert into tabla1 values(15,'Gringa suadero', 30,2,1);
+insert into tabla1 values(16,'Gringa bisteck', 30,2,1);
+insert into tabla1 values(17,'Gringa bisteck con queso', 35,2,1);
+insert into tabla1 values(18,'Gringa imposible', 35,2,1);
+insert into tabla1 values(19,'Gringa pastor', 30,2,1);
+insert into tabla1 values(20,'Gringa suadero', 30,2,1);
+insert into tabla1 values(21,'Gringa imposible', 30,2,1);
+insert into tabla1 values(22,'Gringa alambre', 35,2,1);
+
+insert into tabla1 values(23,'Gordita de suadero', 30,4,3);
+
+insert into tabla1 values(24,'Guajolota Verde', 17,11,5);
+insert into tabla1 values(25,'Guajolota Roja', 17,11,5);
+insert into tabla1 values(26,'Guajolota de Dulce', 17,11,5);
+insert into tabla1 values(27,'Guajolota de Zarzamora', 17,11,5);
+insert into tabla1 values(28,'Guajolota de Rajas', 17,11,5);
+insert into tabla1 values(29,'Guajolota de Dulce', 17,11,5);
+
+--INICIAL H
+insert into tabla1 values(30,'Huarache de suadero', 40,7,3);
+insert into tabla1 values(31,'Huarache de pollo', 40,7,3);
+insert into tabla1 values(32,'Hot dogs 3', 25,14,5);
+
+--INICIAL P
+insert into tabla1 values(33,'Pambazo de suadero', 30,6,3);
+insert into tabla1 values(34,'Pambazo de pollo', 30,6,3);
+insert into tabla1 values(35,'Paleta de hielo de Queso', 15,17,7);
+insert into tabla1 values(36,'Paleta de hielo de Zarzamora', 15,17,7);
+insert into tabla1 values(37,'Paleta de hielo de Limon', 12,17,7);
+insert into tabla1 values(38,'Paleta de hielo de Galleta de Oreo', 15,17,7);
+
+--INICIAL Q
+insert into tabla1 values(39,'Quesadilla de queso', 25,5,3);
+insert into tabla1 values(40,'Quesadilla de pollo', 25,5,3);
+insert into tabla1 values(41,'Quesadilla de queso', 25,5,3);
+insert into tabla1 values(42,'Quesadilla de suadero', 25,5,3);
+
+--INICIAL R
+insert into tabla1 values(43,'Rebanada de Pizza Hawaina', 20,9,4);
+insert into tabla1 values(44,'Rebanada de Pizza Peperoni', 20,9,4);
+insert into tabla1 values(45,'Rebanada de Pizza Queso', 20,9,4);
+insert into tabla1 values(46,'Rebanada de Pizza Longaniza', 20,9,4);
+insert into tabla1 values(47,'Rebanada de Pizza Mexicana', 20,9,4);
+
+
+
+--INICIAL T
+insert into tabla1 values(48,'Taco de tripa', 20,1,1);
+insert into tabla1 values(49,'Taco aceitoso', 25,1,1);
+insert into tabla1 values(50,'Taco de Bisteck', 20,1,1);
+insert into tabla1 values(51,'Taco de queso', 20,1,1);
+insert into tabla1 values(52,'Taco de alambre', 25,1,1);
+insert into tabla1 values(53,'Taco feo', 25,1,1);
+insert into tabla1 values(54,'Taco de suadero', 20,1,1);
+insert into tabla1 values(55,'Taco de Longaniza', 20,1,1);
+insert into tabla1 values(56,'Taco de pastor', 20,1,1);
+insert into tabla1 values(57,'Taco de campechano', 25,1,1);
+insert into tabla1 values(58,'Torta suadero', 40,3,2);
+insert into tabla1 values(59,'Torta milanesa con queso', 50,3,2);
+insert into tabla1 values(60,'Torta milanesa sencilla', 40,3,2);
+insert into tabla1 values(61,'TESOTORTA', 40,3,2);
+insert into tabla1 values(62,'TORTAUMB', 55,3,2);
+insert into tabla1 values(63,'Torta campechana', 40,3,2);
+insert into tabla1 values(64,'Torta pierna', 45,3,2);
+insert into tabla1 values(65,'Torta pollo', 40,3,2);
+insert into tabla1 values(66,'Torta chorizo', 40,3,2);
+insert into tabla1 values(67,'Tamal Verde', 15,10,5);
+insert into tabla1 values(68,'Tamal Rojo', 15,10,5);
+insert into tabla1 values(69,'Tamal de Rajas', 15,10,5);
+insert into tabla1 values(70,'Tamal de Dulce', 15,10,5);
+insert into tabla1 values(71,'Tamal de Zarzamora', 15,10,5);
+insert into tabla1 values(72,'Tamal Oaxaqueño Verde', 15,10,5);
+insert into tabla1 values(73,'Tamal Oaxaqueño Rojo', 15,10,5);
+insert into tabla1 values(74,'Tacos de canasta de Papa 3', 20,13,6);
+insert into tabla1 values(75,'Tacos de canasta de Frijol 3', 20,13,6);
+
+select* from Tabla2;
+insert into Tabla2 values(40,'Vino');
+insert into Tabla2 values(41,'vodka');
+insert into Tabla2 values(42,'tonayan');
+insert into Tabla2 values(43,'drogas');
+insert into Tabla2 values(44,'aguas locas');
+
+select* from Tabla3;
+insert into Tabla3 values(1,'lambrusco');
+insert into Tabla3 values(2,'oso negro');
+insert into Tabla3 values(3,'caña de oro');
+insert into Tabla3 values(4,'el brayan');
+insert into Tabla3 values(5,'don fede');
+
+
+
+
+--La declaración de secuencia comienza con la línea "CREATE SEQUENCE sec_ids", donde "sec_ids" es el nombre de la secuencia. 
+--A continuación, se definen diferentes atributos de la secuencia:
+--"START WITH 1": Establece el primer valor de la secuencia en 1. Es decir, la secuencia comenzará generando el número 1.
+--"INCREMENT BY 1": Especifica que cada vez que se solicite un nuevo valor de la secuencia, se incrementará en 1. Por lo tanto, los valores generados serán 1, 2, 3, y así sucesivamente.
+--"MAXVALUE 100": Define el valor máximo que puede alcanzar la secuencia. En este caso, se establece en 100, lo que significa que la secuencia generará valores hasta 100 y luego se detendrá.
+--"MINVALUE 0": Establece el valor mínimo de la secuencia en 0. Esto indica que la secuencia no generará valores por debajo de 0.
+
+create sequence sec_ids
+start with 1
+increment by 1
+maxvalue 100
+minvalue 0;
+
+drop sequence sec_ids;
+
+
+
+
+
+
+
+
+
+
+
+--Para este, como objetivo principal del disparador es asignar un tipo de producto específico a cada registro insertado en "tabla1" y verificar 
+--si ese tipo de producto ya existe en la tabla "Tabla2". Si el tipo de producto no existe en "Tabla2", se inserta un nuevo registro 
+--en "Tabla2" con el tipo de producto correspondiente.
+--El disparador utiliza una estructura condicional IF-ELSIF-ELSE para asignar el tipo de producto en función del valor de la columna "Num_tipo" 
+--del nuevo registro insertado en "tabla1". Cada valor posible de "Num_tipo" tiene una asignación de tipo de producto correspondiente.
+-- Luego, se ejecuta una consulta SELECT COUNT(*) para verificar si el tipo de producto ya existe en "Tabla2". Si el recuento es cero 
+--(es decir, el tipo de producto no existe), se realiza una inserción en "Tabla2" utilizando el comando INSERT INTO.
+
+
+CREATE OR REPLACE TRIGGER trg_TipoProducto
+before INSERT ON tabla1
+FOR EACH ROW
+DECLARE
+  tipo_de_producto NVARCHAR2(30);
+  tipo_existiendo NUMBER;
+BEGIN
+  IF :NEW.Num_tipo = 1 THEN
+    tipo_de_producto := 'Taco';
+  ELSIF :NEW.Num_tipo = 2 THEN
+    tipo_de_producto := 'Gringa';
+  ELSIF :NEW.Num_tipo = 3 THEN
+    tipo_de_producto := 'Torta';
+  ELSIF :NEW.Num_tipo = 4 THEN
+    tipo_de_producto := 'Gordita';
+  ELSIF :NEW.Num_tipo = 5 THEN
+    tipo_de_producto := 'Quesadilla';
+  ELSIF :NEW.Num_tipo = 6 THEN
+    tipo_de_producto := 'Pambazo';
+  ELSIF :NEW.Num_tipo = 7 THEN
+    tipo_de_producto := 'Huarache';
+  ELSIF :NEW.Num_tipo = 8 THEN
+    tipo_de_producto := 'Enchilada';
+  ELSIF :NEW.Num_tipo = 9 THEN
+    tipo_de_producto := 'Rebanada de Pizza';
+  ELSIF :NEW.Num_tipo = 10 THEN
+    tipo_de_producto := 'Tamal';
+  ELSIF :NEW.Num_tipo = 11 THEN
+    tipo_de_producto := 'Guajolota';
+  ELSIF :NEW.Num_tipo = 12 THEN
+    tipo_de_producto := 'Agua Fresca';
+  ELSIF :NEW.Num_tipo = 13 THEN
+    tipo_de_producto := 'Taco de Canasta';
+  ELSIF :NEW.Num_tipo = 14 THEN
+    tipo_de_producto := 'Hot dog';
+  ELSIF :NEW.Num_tipo = 15 THEN
+    tipo_de_producto := 'Congelada';
+  ELSIF :NEW.Num_tipo = 16 THEN
+    tipo_de_producto := 'Chamoyada';
+  ELSIF :NEW.Num_tipo = 17 THEN
+    tipo_de_producto := 'Paleta de Hielo';
+  ELSIF :NEW.Num_tipo = 18 THEN
+    tipo_de_producto := 'Refresco';
+  ELSIF :NEW.Num_tipo = 19 THEN
+    tipo_de_producto := 'Papas';
+  ELSIF :NEW.Num_tipo = 20 THEN
+    tipo_de_producto := 'Galletas';
+  ELSIF :NEW.Num_tipo = 21 THEN
+    tipo_de_producto := 'Chocolate';
+  ELSIF :NEW.Num_tipo = 22 THEN
+    tipo_de_producto := 'Pan de Dulce';
+  ELSE
+    tipo_de_producto := 'desconocido';
+  END IF;
+
+  SELECT COUNT(*) INTO tipo_exists FROM Tabla2 WHERE Tipo = tipo_de_producto;
+  IF tipo_exists = 0 THEN
+    INSERT INTO Tabla2 (id, Tipo) VALUES (sec_ids.NEXTVAL, tipo_de_producto);
+  END IF;
+END;
+
+
+create sequence sec_id_marca
+start with 1
+increment by 1
+maxvalue 100
+minvalue 0;
+
+drop sequence sec_id_marca;
+
+
+
+CREATE OR REPLACE TRIGGER trg_MarcaProducto
+before INSERT ON tabla1
+FOR EACH ROW
+DECLARE
+  marca_del_producto NVARCHAR2(30);
+  marca_exists NUMBER;
+BEGIN
+  IF :NEW.Num_mar = 1 THEN
+    marca_del_producto := 'Tacos Pepe';
+  ELSIF :NEW.Num_mar = 2 THEN
+    marca_del_producto := 'Tortas El Tio';
+  ELSIF :NEW.Num_mar = 3 THEN
+    marca_del_producto := 'Garnachas';
+  ELSIF :NEW.Num_mar = 4 THEN
+    marca_del_producto := 'Pizzas Teso';
+  ELSIF :NEW.Num_mar = 5 THEN
+    marca_del_producto := 'Tamales El Bochito';
+  ELSIF :NEW.Num_mar = 6 THEN
+    marca_del_producto := 'Taquitos Canasta';
+  ELSIF :NEW.Num_mar = 7 THEN
+    marca_del_producto := 'Los Helados Teso';
+  ELSIF :NEW.Num_mar = 8 THEN
+    marca_del_producto := 'Coca-Cola';
+  ELSIF :NEW.Num_mar = 9 THEN
+    marca_del_producto := 'Sabritas';
+  ELSIF :NEW.Num_mar = 10 THEN
+    marca_del_producto := 'Zenzo';
+  ELSIF :NEW.Num_mar = 11 THEN
+    marca_del_producto := 'Bocadin';
+  ELSIF :NEW.Num_mar = 12 THEN
+    marca_del_producto := 'Bimbo';
+  ELSE
+    marca_del_producto := 'Marca desconocida';
+  END IF;
+
+  SELECT COUNT(*) INTO marca_exists FROM Tabla3 WHERE Marca = marca_del_producto;
+  IF marca_exists = 0 THEN
+    INSERT INTO Tabla3 (id, Marca) VALUES (sec_id_marca.NEXTVAL, marca_del_producto);
+  END IF;
+END;
+
+
+
+
+
+--En la primera consulta, se seleccionan los nombres, precios, tipos y marcas de los registros de la tabla1, y se combinan con los registros correspondientes de las tablas Tabla2 y Tabla3. Se mostrarán todos los registros de la tabla1, 
+--incluso si no hay una coincidencia en las otras tablas.
+--En la segunda consulta, se seleccionan todos los campos de la tabla1, pero solo se combinan con los registros de la Tabla2 donde el valor de num_mar sea igual a 6. Los registros de la tabla1 que no cumplan esta condición no se mostrarán.
+--En la tercera consulta, se seleccionan todos los campos de la tabla1 y se combinan con los registros correspondientes de la Tabla2. Se mostrarán todos los registros de la tabla1, incluso si no hay una coincidencia en la Tabla2.
+--En la cuarta consulta, se seleccionan todos los campos de la tabla1 y se combinan con los registros de la Tabla3. Solo se mostrarán los registros de la tabla1 que tengan una coincidencia en la Tabla3, y los registros de la Tabla3 que no 
+--tengan una coincidencia en la tabla1 se mostrarán con valores nulos.
+--En la quinta consulta, se seleccionan los identificadores, nombres, precios, tipos y marcas de los registros de la tabla1 que cumplan con ciertas condiciones. Se combinan con los registros correspondientes de las tablas Tabla2 y Tabla3 
+--utilizando combinaciones internas (INNER JOIN). Los registros de la tabla1 que no cumplan las condiciones no se mostrarán. Las condiciones se refieren a los nombres que comienzan con 'B' o 'P'.
+
+select a.nombre, a.precio, b.tipo, c.marca from tabla1 a
+FULL JOIN Tabla2 b on a.num_tipo= b.id
+FULL JOIN Tabla3 c on a.num_mar= c.id ;
+
+
+select a.* from tabla1 a
+INNER JOIN Tabla2 b on a.num_tipo= b.id 
+and a.num_mar=6;
+
+
+select * from tabla1 a
+LEFT JOIN Tabla2 c on a.num_tipo= c.id ;
+
+select * from tabla1 a
+RIGHT JOIN Tabla3 b on a.num_mar= b.id  and b.id is null;
+
+
+select * from tabla1 a
+FULL JOIN Tabla2 b on a.num_tipo= b.id 
+FULL JOIN Tabla3 c on a.num_mar= c.id  
+where b.id is null or c.id is null ;
+
+
+select a.id, a.nombre, a.precio, b.tipo, c.marca from tabla1 a
+JOIN Tabla2 b on a.num_tipo= b.id
+JOIN Tabla3 c on a.num_mar= c.id 
+WHERE a.nombre LIKE 'B%' OR a.nombre LIKE 'P%';
+
+
+
+
+--Se definen dos disparadores (triggers) llamados "tr_Prod_T" y "tr_Produtes". Estos disparadores se ejecutan después de realizar una inserción en la tabla "tabla1".
+--El disparador "tr_Prod_T" verifica si el nombre del nuevo producto comienza con la letra 'T' y, en caso afirmativo, inserta una descripción en la tabla "Descripcion1" indicando que se ha agregado un producto con la "vitamina T" seguido del nombre del producto.
+--El disparador "tr_Produtes" verifica si el nombre del nuevo producto comienza con la letra 'T' y, en caso afirmativo, inserta una descripción en la tabla "Descripcion1" indicando que se ha insertado un producto con la "vitamina T" seguido del nombre del producto.
+--Por último, se realizan varias inserciones en la tabla "tabla1" para probar los disparadores y ver si se ejecutan correctamente.
+
+
+CREATE TABLE Descripcion1(
+descripcion nvarchar2(100)
+);
+
+SELECT * FROM Descripcion1;
+drop table Descripcion1;
+
+CREATE OR REPLACE TRIGGER tr_Prod_T
+AFTER INSERT ON tabla1
+FOR EACH ROW
+BEGIN
+        IF SUBSTR(:NEW.nombre, 1, 1) = 'T' THEN
+        INSERT INTO Descripcion1 (descripcion)
+        VALUES ('Se agregó un producto con la vitamina T:' ||:NEW.Nombre);
+    END IF;
+END;
+
+CREATE OR REPLACE TRIGGER tr_Produtes
+AFTER INSERT ON tabla1
+FOR EACH ROW
+BEGIN
+        IF :NEW.nombre LIKE 'T%' THEN
+        INSERT INTO Descripcion1 (descripcion)
+        VALUES ('Se inserto un producto con la vitamina T: ' ||:NEW.Nombre);
+    END IF;
+END;
+
+
+insert into tabla1 values(76,'Tamalito de chipilin', 18,10,5);
+insert into tabla1 values(77,'Taco de robalo', 40,1,1);
+insert into tabla1 values(78,'Torta titan', 80,3,2);
+insert into tabla1 values(79,'Tacos de asada', 20,13,6);
+
+
+drop trigger tr_Prodtes;
+
+
+--A continuación, se crean dos vistas utilizando el comando "CREATE VIEW". La vista "Vistajuego" se crea seleccionando columnas de las tablas 
+--"vidiogeims" y "tipogeims" y realizando una unión entre ellas basada en la columna "Num_tipod" de "vidiogeims" y la columna "id" de "tipogeims". 
+--La vista "Vistatipo" se crea seleccionando las columnas "id" y "tipod" de la tabla "tipogeims".
+--Finalmente, se realiza una consulta para mostrar todos los registros de la vista "Vistatipo" utilizando el comando "SELECT * FROM Vistatipo".
+
+drop table vidiogeims;
+drop table tipogeims;
+
+create table vidiogeims(
+id number(2),
+nombre nvarchar2(100),
+Num_tipod number(2)
+);
+
+
+SELECT * FROM vidiogeims;
+insert into vidiogeims values (01,'World of Warcraft', 2);
+insert into vidiogeims values (02,'GTA', 3);
+insert into vidiogeims values (03,'Forza Horizon',3);
+insert into vidiogeims values (04,'Red Death', 3;
+insert into vidiogeims values (05,'ARK', 3);
+insert into vidiogeims values (06,'call of duty', 4);
+insert into vidiogeims values (07,'diablo',1);
+
+SELECT * FROM tipogeims;
+create table tipogeims(
+id number(2),
+tipod nvarchar2(100));
+
+insert into tipogeims values (1,'MMO');
+insert into tipogeims values (2,'RPG');
+insert into tipogeims values (3,'MundoAbierto');
+insert into tipogeims values (4,'shooter');
+
+
+CREATE VIEW Vistajuego AS
+SELECT e.id, e.Nombre, a.tipod 
+FROM vidiogeims e
+JOIN tipogeims a ON  e.Num_tipod=a.id;
+
+
+CREATE VIEW Vistatipo AS
+SELECT id, tipod
+FROM tipogeims;
+
+SELECT *
+FROM Vistatipo;
+
+SELECT *
+FROM Vistajuego;
